@@ -55,7 +55,6 @@
   "browser-sync": {
     "open": false,
     "port": 5001,
-    "ui": 5002,
     "server": "src",
     "watch": true
   }
