@@ -4,7 +4,7 @@
   "description": "It's a good game",
   "scripts": {
     "build": "npm-run-all --serial prettier clean --parallel build:html build:css --serial build:assets",
-    "build:assets": "ncp src/assets/ dist/assets/",
+    "build:assets": "ncp src/assets/ dist/assets/ && ncp CNAME dist/CNAME",
     "build:css": "postcss src/css/style.css -o dist/css/style.css",
     "build:html": "html-minifier --config-file html-minifier-config.json --file-ext html --input-dir src --output-dir dist",
     "clean": "rimraf dist",
