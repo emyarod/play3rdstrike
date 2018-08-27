@@ -1,0 +1,62 @@
+{
+  "name": "play3rdstrike",
+  "version": "1.0.0",
+  "description": "It's a good game",
+  "scripts": {
+    "build": "npm-run-all --serial prettier clean --parallel build:html build:css --serial build:assets",
+    "build:assets": "ncp src/assets/ dist/assets/",
+    "build:css": "postcss src/css/style.css -o dist/css/style.css",
+    "build:html": "html-minifier --config-file html-minifier-config.json --file-ext html --input-dir src --output-dir dist",
+    "clean": "rimraf dist",
+    "dev": "npm start",
+    "prettier": "prettier --write \"**/*.{css,md}\"",
+    "start": "browser-sync start",
+    "test": "echo \"Play 3rd Strike\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emyarod/play3rdstrike.git"
+  },
+  "keywords": [
+    "street",
+    "fighter",
+    "3",
+    "3rd",
+    "strike"
+  ],
+  "author": "emyarod",
+  "bugs": {
+    "url": "https://github.com/emyarod/play3rdstrike/issues"
+  },
+  "homepage": "https://github.com/emyarod/play3rdstrike#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "browser-sync": "^2.24.7",
+    "cssnano": "^4.1.0",
+    "html-minifier": "^3.5.20",
+    "ncp": "^2.0.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0",
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.2"
+  },
+  "browserslist": "last 4 versions",
+  "prettier": {
+    "printWidth": 80
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "cssnano": {
+        "safe": true
+      }
+    }
+  },
+  "browser-sync": {
+    "open": false,
+    "port": 5001,
+    "ui": 5002,
+    "server": "src",
+    "watch": true
+  }
+}

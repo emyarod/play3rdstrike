@@ -1,0 +1,13 @@
+{
+  "collapseWhitespace": true,
+  "collapse-whitespace": true,
+  "remove-comments": true,
+  "remove-optional-tags": true,
+  "remove-redundant-attributes": true,
+  "remove-script-type-attributes": true,
+  "remove-tag-whitespace": true,
+  "use-short-doctype": true,
+  "file-ext": "html",
+  "input-dir": "src",
+  "output-dir": "dist"
+}
