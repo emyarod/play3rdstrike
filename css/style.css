@@ -13,3 +13,7 @@ a {
   align-items: center;
   min-height: 80vh;
 }
+
+.judgment {
+  max-width: 100vw;
+}
