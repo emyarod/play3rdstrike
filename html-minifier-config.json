@@ -7,7 +7,5 @@
   "remove-script-type-attributes": true,
   "remove-tag-whitespace": true,
   "use-short-doctype": true,
-  "file-ext": "html",
-  "input-dir": "src",
-  "output-dir": "dist"
+  "removeComments": true
 }
