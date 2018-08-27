@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/emyarod/play3rdstrike/issues"
   },
-  "homepage": "https://github.com/emyarod/play3rdstrike#readme",
+  "homepage": "https://www.play3rdstrike.com",
   "devDependencies": {
     "autoprefixer": "^9.1.3",
     "browser-sync": "^2.24.7",
