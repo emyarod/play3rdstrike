@@ -2,6 +2,7 @@
   "name": "play3rdstrike",
   "version": "1.0.0",
   "description": "It's a good game",
+  "license": "MIT",
   "scripts": {
     "build": "npm-run-all --serial prettier clean --parallel build:html build:css --serial build:assets",
     "build:assets": "ncp src/assets/ dist/assets/ && ncp CNAME dist/CNAME",
